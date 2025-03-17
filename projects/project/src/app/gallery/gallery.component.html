@@ -1,0 +1,44 @@
+<div class="rs-breadcrumbs">
+    <img src="../../assets/images/breadcrumbs-bg.jpg" alt="Breadcrumbs Image">
+    <div class="container">
+        <div class="breadcrumbs-content">
+            <h1 class="title">Our Gallery</h1>
+            <div class="page-path text-center">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li>Our Gallery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>	
+<div class="rs-gallery-section pt-90 pb-70">
+    <div class="container">     
+        <div class="row grid">
+            <ng-container *ngFor="let item of GalleryInfo">
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-30 grid-item filter1 filter3">
+                    <div class="single-gallery style-2">
+                        <img src="{{baseUrl+'/UploadFile/Gallery/'+item.Photo}}" alt="Gallery Image" />
+                        <div class="popup-icon">
+                            <a class="image-popup" href="{{baseUrl+'/UploadFile/Gallery/'+item.Photo}}" title="Photo Title Here">
+                                <i class="fa fa-plus-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ng-container> 
+            <!-- <ng-container *ngFor="let item of gallery">
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-30 grid-item filter1 filter3">
+                <div class="single-gallery style-2">
+                    <img src="{{'../../assets/images/gallery/'+item+'.jpeg'}}" alt="Gallery Image" />
+                    <div class="popup-icon">
+                        <a class="image-popup" href="{{'../../assets/images/gallery/'+item+'.jpeg'}}" title="Photo Title Here">
+                            <i class="fa fa-plus-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>             -->
+        </div>
+    </div>
+</div>

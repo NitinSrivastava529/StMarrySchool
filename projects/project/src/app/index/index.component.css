@@ -1,0 +1,31 @@
+.slider-button a{
+    background: #4b64bd;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid  #4b64bd;
+}
+.readon{
+    background: #4b64bd !important;
+}
+.news{
+    padding-bottom: 10px;
+}
+.news h3{
+    margin: 0;
+    font-size: 18px;
+    color: rgb(168, 18, 18);
+}
+ul.newsList{
+margin: 0;
+}
+ul.newsList li{
+   border-bottom:1px solid #ddd;
+   margin-bottom: 5px;
+}
+#myModal img{
+    margin-top:10px ;
+}
+#myModal .modal-dialog {
+    max-width: 95%;
+}

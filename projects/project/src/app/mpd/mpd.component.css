@@ -1,0 +1,13 @@
+.title-info{
+    text-align: center;
+    background: #f0f5f7;
+    font-size: 17px;
+    color: #000;
+}
+#tblInfo{
+    margin-top: 20px;
+}
+#tblInfo th,#tblInfo td{
+    text-align: center;
+    font-size: 16px;
+}
